@@ -31,7 +31,7 @@ $(document).ready(function(){
  var newGame = function() {
  	game = new Game();
  		$count.text(game.guesses.length); 
- 		$feedback.text("Make your guess!");
+ 		$feedback.text("Make your first guess!");
  		$List.empty();
  		$input.val("");
  	};
@@ -70,7 +70,7 @@ $(document).ready(function(){
 	}
 
 } else {
-	$feedback.text("Unexceptable!!!");
+	$feedback.text("Enter a real number!");
 }
 
 });
